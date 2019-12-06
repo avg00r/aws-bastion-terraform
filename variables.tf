@@ -2,12 +2,12 @@
 
 variable "ssh_key" {
   description = "The key name of the Key Pair to use for the instance:"
-  default     = "MyMacKey"
+  //  default     = "MyMacKey"
 }
 
 variable "instance_type" {
   description = "The type of instance to start:"
-  default     = "t2.micro"
+  //  default     = "t2.micro"
 }
 
 variable "vpc_id" {
