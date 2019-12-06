@@ -12,8 +12,10 @@ data "aws_ami" "ubuntu" {
 }
 
 resource "aws_autoscaling_group" "bastion_autoscaling_group" {
-  min_size = 1
-  max_size = 1
+  launch_configuration = aws_launch_configuration.bastion_launch_config.name
+  min_size             = 1
+  max_size             = 1
+  vpc_zone_identifier  = [var.subnet_id]
 }
 
 resource "aws_launch_configuration" "bastion_launch_config" {
