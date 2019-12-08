@@ -1,5 +1,5 @@
 resource "aws_security_group" "bastion_sg" {
-  name   = "Bastion SSH access"
+  name   = "Bastion SG"
   vpc_id = var.vpc_id
 
   ingress {

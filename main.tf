@@ -6,9 +6,11 @@
 # Made by Vadim Yangunaev
 #----------------------------------------------------------
 provider "aws" {
-  region = "us-east-1"
+  region = var.region
 }
 
 terraform {
   required_version = ">= 0.12"
 }
+
+//data "aws_region" "current" {}

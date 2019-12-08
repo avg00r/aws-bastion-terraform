@@ -1,3 +1,4 @@
+/*
 resource "aws_instance" "bastion" {
 
   ami = "ami-00eb20669e0990cb4"
@@ -14,6 +15,8 @@ resource "aws_instance" "bastion" {
     Name = "AWS Bastion Terraform"
   }
 }
+
+*/
 
 /*
 resource "aws_default_vpc" "default" {}
